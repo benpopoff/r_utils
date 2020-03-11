@@ -10,7 +10,7 @@ summarise_na <- function(df){
   result
 }
 
-# Extract numeric values from raw variable
+# Extract numeric values from raw value
 extract_number <- function(x){
   result <- stringr::str_extract(x, "([0-9]*,?[0-9]+)") %>%
     stringr::str_replace(",", ".") %>%
