@@ -14,7 +14,7 @@ summarise_na <- function(df){
 extract_number <- function(x){
   result <- stringr::str_extract(x, "([0-9]*,?[0-9]+)") %>%
     stringr::str_replace(",", ".") %>%
-    stringr::as.numeric()
+    as.numeric()
   
   result
 }
